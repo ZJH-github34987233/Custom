@@ -1,0 +1,444 @@
+﻿<!--
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+
+           Grid.Column="0" Grid.Row="0" 
+
+</Grid>
+-->
+	
+
+
+<Grid Margin="0,-17,0,0">  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>  
+        <ColumnDefinition></ColumnDefinition>  
+        <ColumnDefinition></ColumnDefinition>  
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition>  
+    </Grid.RowDefinitions>  
+<local:MyButton Margin="0,0,5,0" Grid.Column="0" Grid.Row="0" Padding="5,5,5,5"
+                   Text="刷新主页" EventType="刷新主页" ToolTip="点我刷新主页！"/>
+<local:MyButton Margin="5,0,0,0" Grid.Column="1" Grid.Row="0" Padding="5,5,5,5"
+                   Text="启动正式版游戏" EventType="启动游戏" EventData="1.17" ToolTip="点我启动1.17！"/>
+<local:MyButton Margin="5,0,0,0" Grid.Column="2" Grid.Row="0" Padding="5,5,5,5" 
+                   Text="启动测试版游戏" EventType="启动游戏" EventData="1.17.1-pre1" ToolTip="点我启动1.17.1-pre1！"/>
+</Grid>  
+
+<Grid Margin="0,10,0,0">  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>  
+        <ColumnDefinition></ColumnDefinition>  
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>  
+<!--以下是卡片-->
+
+  <local:MyCard Title="快捷启动" Margin="0,0,7.5,0" CanSwap="True" IsSwaped="True" Grid.Column="0" Grid.Row="0">
+    <StackPanel Margin="13,40,11,15">
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight"
+                   Text="最后启动的版本" EventType="打开文件" EventData="LatestLaunch.bat" ToolTip="点我在控制台启动最后启动的版本！"/>
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="最新版本"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="0" 
+                   Text="1.17" EventType="启动游戏" EventData="1.17" ToolTip="点我启动1.17！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="0" 
+                   Text="1.17.1-pre1" EventType="启动游戏" EventData="1.17.1-pre1" ToolTip="点我启动1.17.1-pre1！"/>
+
+</Grid>
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="战斗更新版本"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Padding="13,0,13,0"
+                   Text="Combat Test 8c" EventType="启动游戏" EventData="Combat Test 8c" ToolTip="点我启动Combat Test 8c！"/>
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="快捷启动版本"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+	    <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="0" Grid.Row="0"
+                   Text="1" EventType="启动游戏" EventData="快捷-1" ToolTip="点我启动快捷-1！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="1" Grid.Row="0"
+                   Text="2" EventType="启动游戏" EventData="快捷-2" ToolTip="点我启动快捷-2！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="2" Grid.Row="0"
+                   Text="3" EventType="启动游戏" EventData="快捷-3" ToolTip="点我启动快捷-3！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="3" Grid.Row="0"
+                   Text="4" EventType="启动游戏" EventData="快捷-4" ToolTip="点我启动快捷-4！"/>
+
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="0" Grid.Row="1"
+                   Text="5" EventType="启动游戏" EventData="快捷-5" ToolTip="点我启动快捷-5！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="1" Grid.Row="1"
+                   Text="6" EventType="启动游戏" EventData="快捷-6" ToolTip="点我启动快捷-6！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="2" Grid.Row="1"
+                   Text="7" EventType="启动游戏" EventData="快捷-7" ToolTip="点我启动快捷-7！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="3" Grid.Row="1"
+                   Text="8" EventType="启动游戏" EventData="快捷-8" ToolTip="点我启动快捷-8！"/>
+
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="0" Grid.Row="2"
+                   Text="9" EventType="启动游戏" EventData="快捷-9" ToolTip="点我启动快捷-9！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="1" Grid.Row="2"
+                   Text="10" EventType="启动游戏" EventData="快捷-10" ToolTip="点我启动快捷-10！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="2" Grid.Row="2"
+                   Text="11" EventType="启动游戏" EventData="快捷-11" ToolTip="点我启动快捷-11！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="3" Grid.Row="2"
+                   Text="12" EventType="启动游戏" EventData="快捷-12" ToolTip="点我启动快捷-12！"/>        
+
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="0" Grid.Row="3"
+                   Text="13" EventType="启动游戏" EventData="快捷-13" ToolTip="点我启动快捷-13！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="1" Grid.Row="3"
+                   Text="14" EventType="启动游戏" EventData="快捷-14" ToolTip="点我启动快捷-14！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="2" Grid.Row="3"
+                   Text="15" EventType="启动游戏" EventData="快捷-15" ToolTip="点我启动快捷-15！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="3" Grid.Row="3"
+                   Text="16" EventType="启动游戏" EventData="快捷-16" ToolTip="点我启动快捷-16！"/>
+</Grid>
+    </StackPanel>
+  </local:MyCard>
+
+  <local:MyCard Title="快捷链接" Margin="7.5,0,0,0" CanSwap="True" IsSwaped="True" Grid.Column="1" Grid.Row="0">
+    <StackPanel Margin="16,40,14,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="中文Minecraft Wiki"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="0"
+                   Text="源网站" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/Minecraft_Wiki" ToolTip="点我打开中文Minecraft Wiki！"/>
+            <local:MyButton Margin="0,5,0,0" Height="35" Grid.Column="1" Grid.Row="0"
+                   Text="镜像站" EventType="打开网页" EventData="https://wiki.biligame.com/mc/Minecraft_Wiki" ToolTip="点我打开中文Minecraft Wiki 镜像站！"/>
+</Grid>
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="中文Minecraft论坛"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="0"
+                   Text="源网站" EventType="打开网页" EventData="https://www.mcbbs.net/" ToolTip="点我打开MCBBS！"/>
+            <local:MyButton Margin="0,5,0,0" Height="35" Grid.Column="1" Grid.Row="0"
+                   Text="Wiki站" EventType="打开网页" EventData="https://mcbbs-wiki.cn/wiki/首页" ToolTip="点我打开MCBBS Wiki！"/>
+</Grid>
+
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="官方网站"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="0" Grid.Row="0"
+                   Text="Minecraft" EventType="打开网页" EventData="https://minecraft.net/" ToolTip="点我打开Minecraft官网！"/>  
+            <local:MyButton Margin="0,5,0,0" Grid.Column="1" Grid.Row="0"
+                   Text="OptiFine" EventType="打开网页" EventData="https://www.optifine.net/home" ToolTip="点我打开OptiFine官网！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="0" Grid.Row="1"
+                   Text="Forge" EventType="打开网页" EventData="https://files.minecraftforge.net/" ToolTip="点我打开Forge官网！"/>
+            <local:MyButton Margin="0,10,0,0" Height="35" Grid.Column="1" Grid.Row="1"
+                   Text="Fabric" EventType="打开网页" EventData="https://www.fabricmc.net/" ToolTip="点我打开Fabric官网！"/> 
+</Grid>
+
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="其它网站"/>
+            <local:MyButton Margin="0,5,0,0" Height="35" ColorType="Highlight"
+                   Text="Planet Minecraft" EventType="打开网页" EventData="https://www.planetminecraft.com/" ToolTip="点我打开Planet Minecraft！"/>
+<local:MyButton Margin="0,10,0,0" Height="35" ColorType="Highlight"
+                   Text="我的世界中文下载站" EventType="打开网页" EventData="http://www.minecraftxz.com/" ToolTip="点我打开中文下载站！"/>
+
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,10,10,0" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="0"
+                   Text="MC百科" EventType="打开网页" EventData="https://www.mcmod.cn/" ToolTip="点我打开Mcmod！"/>
+            <local:MyButton Margin="0,10,0,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="0"
+                   Text="CurseForge" EventType="打开网页" EventData="https://www.curseforge.com/minecraft/modpacks" ToolTip="点我打开CurseForge！"/>
+</Grid>	
+    </StackPanel>
+  </local:MyCard>
+
+ <local:MyCard Title="快捷功能" Margin="0,15,7.5,0" CanSwap="True" IsSwaped="True" Grid.Column="0" Grid.Row="1">
+    <StackPanel Margin="14,40,12,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="刷新功能"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Padding="13,0,13,0"
+                   Text="刷新主页" EventType="刷新主页" ToolTip="点我刷新主页！"/>
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="下载主页"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="0" Grid.Row="0"
+                   Text="正式版" EventType="下载文件" EventData="http://49.232.199.166/PCL II自定义主题(ZJH制作)/Custom.xaml" ToolTip="点我下载主页文件！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="1" Grid.Row="0"
+                   Text="测试版" EventType="下载文件" EventData="http://49.232.199.166/[测试]pcl2自定义主题(ZJH制作)/Custom.xaml" ToolTip="点我下载主页文件！"/>
+</Grid>
+
+<TextBlock TextWrapping="Wrap" Margin="0,5,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="复制下载链接"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="0" Grid.Row="0"
+                   Text="正式版" EventType="复制文本" EventData="http://49.232.199.166/PCL II自定义主题(ZJH制作)/Custom.xaml" ToolTip="点我复制主页文件下载链接！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="1" Grid.Row="0"
+                   Text="测试版" EventType="复制文本" EventData="http://49.232.199.166/[测试]pcl2自定义主题(ZJH制作)/Custom.xaml" ToolTip="点我复制主页文件下载链接！"/>
+</Grid>
+
+    </StackPanel>
+ </local:MyCard>
+
+ <local:MyCard Title="教学精选" Margin="7.5,15,0,0" CanSwap="True" IsSwaped="True" Grid.Column="1" Grid.Row="1">
+    <StackPanel Margin="16,40,14,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="中文Minecraft Wiki教学"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+           <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="0" Grid.Row="0"
+                   Text="菜单教学" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/教程/菜单界面" ToolTip="点我查看菜单教学！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Grid.Column="1" Grid.Row="0"
+                   Text="游戏术语" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/教程/游戏术语" ToolTip="点我查看游戏术语教学！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="0" Grid.Row="1"
+                   Text="菜鸟手册" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/教程/菜鸟手册" ToolTip="点我查看快捷功能教学！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="1" Grid.Row="1"
+                   Text="导航教学" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/教程/导航" ToolTip="点我查看导航教学！"/>  
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="0" Grid.Row="2"
+                   Text="饥饿管理" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/教程/饥饿管理" ToolTip="点我查看饥饿管理教学！"/>
+            <local:MyButton Margin="0,10,10,0" Height="35" Grid.Column="1" Grid.Row="2"
+                   Text="提示技巧" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/教程/提示与技巧" ToolTip="点我查看提示与技巧教学！"/>  
+</Grid>
+            <local:MyButton Margin="0,10,10,0" Height="35" ColorType="Highlight"
+                   Text="所有教学" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/教程" ToolTip="点我查看所有教学！"/>
+    </StackPanel>
+ </local:MyCard>
+
+<local:MyCard Title="启动器链接" Margin="0,15,7.5,0" CanSwap="True" IsSwaped="True" Grid.Column="0" Grid.Row="2">
+    <StackPanel Margin="18,40,16,15">
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="0"
+                   Text="爱发电" EventType="打开网页" EventData="https://afdian.net/@LTCat" ToolTip="点我打开龙腾猫跃爱发电主页！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="0"
+                   Text="介绍页面" EventType="打开网页" EventData="https://afdian.net/p/8fe6fefefde811e9bda952540025c377" ToolTip="点我查看赞助说明与常见问题！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="1"
+                   Text="帮助" EventType="打开网页" EventData="https://pcl2-help.gitee.io/" ToolTip="点我打开帮助！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="1"
+                   Text="B站主页" EventType="打开网页" EventData="https://space.bilibili.com/11343203" ToolTip="点我打开龙腾猫跃B站主页！"/>
+</Grid>
+
+    </StackPanel>
+</local:MyCard>    
+
+<local:MyCard Title="下载功能" Margin="7.5,15,0,0" CanSwap="True" IsSwaped="True" Grid.Column="1" Grid.Row="2">
+    <StackPanel Margin="16,40,14,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="下载文件"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,5,5" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="0"
+                   Text="HMCL" EventType="打开网页" EventData="https://hmcl.huangyuhui.net/download" ToolTip="点我下载HMCL！"/>
+            <local:MyButton Margin="5,5,0,5" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="0"
+                   Text="VScode" EventType="打开网页" EventData="https://code.visualstudio.com/Download" ToolTip="点我下载VScode！"/>
+            <local:MyButton Margin="0,5,5,5" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="1"
+                   Text="工具箱" EventType="打开网页" EventData="https://pan.baidu.com/s/1KaWiU_XnYsV5fH0vIuni8A" ToolTip="点我下载工具箱（提取码：ZJH1）！"/>
+</Grid>
+
+<TextBlock TextWrapping="Wrap" Margin="0,0,10,0" Foreground="#808080" FontSize="11.5" HorizontalAlignment="Left"
+        Text="推荐的下载链接"/>
+<Grid>  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>   
+        <ColumnDefinition></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition> 
+    </Grid.RowDefinitions>  
+            <local:MyButton Margin="0,5,5,0" Height="35" ColorType="Highlight" Grid.Column="0" Grid.Row="0"
+                   Text="MC百科" EventType="打开网页" EventData="https://www.mcmod.cn/" ToolTip="点我打开Mcmod！"/>
+            <local:MyButton Margin="5,5,0,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="0"
+                   Text="CurseForge" EventType="打开网页" EventData="https://www.curseforge.com/minecraft/modpacks" ToolTip="点我打开CurseForge！"/>
+</Grid>
+    </StackPanel>
+</local:MyCard>    
+
+<local:MyCard Title="使用提示" Margin="0,15,7.5,0" CanSwap="True" IsSwaped="True" Grid.Column="0" Grid.Row="3">
+    <StackPanel Margin="18,40,16,15">
+<local:MyHint Margin="0,0,5,10" IsWarn="False"
+        Text="在默认窗口大小下使用效果更佳！"/>
+<local:MyHint Margin="0,0,5,0" IsWarn="False"
+        Text="此主页中游戏版本并非第一时间更新！"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="图片" Margin="7.5,15,0,0" CanSwap="True" IsSwaped="True" Grid.Column="1" Grid.Row="3">
+    <StackPanel Margin="7,40,7,15">
+<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+	     <Image Height="30" Margin="5,5,0,5" Source="https://pic1.afdiancdn.com/user/df2dfad2960911e89c5252540025c377/avatar/31c78ee63d5dce8ac4848c837fb04204_w160_h160_s35.jpg?imageView2/1/w/120/h/120" />
+	     <Image Height="30" Margin="5,5,0,5" Source="https://pic1.afdiancdn.com/user/user_upload_osl/5106024ce0954d23dac89004576d65ae_w132_h132_s2.jpeg?imageView2/1/w/120/h/120" />
+	     <Image Height="30" Margin="5,5,0,5" Source="https://pic1.afdiancdn.com/user/df2dfad2960911e89c5252540025c377/common/1c489ab1560cb98b6ccb592367849aed_w240_h240_s40.jpg?imageView2/1/w/160/h/160" />
+            <Image Height="30" Margin="5,5,0,5" Source="pack://application:,,,/images/Blocks/CommandBlock.png"/>      <!-- 命令方块 -->
+            <Image  Height="30" Margin="5,5,0,5" Source="pack://application:,,,/images/Blocks/Cobblestone.png"/>        <!-- 圆石 -->
+</StackPanel>
+<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image Height="30" Margin="5,5,0,5" Source="pack://application:,,,/images/Blocks/GoldBlock.png"/>          <!-- 金块 -->
+            <Image Height="30" Margin="5,5,0,5" Source="pack://application:,,,/images/Blocks/Grass.png"/>              <!-- 草方块 -->
+            <Image Height="30" Margin="5,5,0,5" Source="pack://application:,,,/images/Blocks/GrassPath.png"/>          <!-- 草径 -->
+            <Image Height="30" Margin="5,5,0,5" Source="pack://application:,,,/images/Blocks/Anvil.png"/>              <!-- 铁砧（zhen） -->
+            <Image Height="30" Margin="5,5,0,5" Source="pack://application:,,,/images/Blocks/RedstoneBlock.png"/>      <!-- 红石块 -->
+</StackPanel>
+<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image Height="30" Margin="5,5,0,0" Source="pack://application:,,,/images/Blocks/RedstoneLampOn.png"/>     <!-- 红石灯（亮） -->
+            <Image Height="30" Margin="5,5,0,0" Source="pack://application:,,,/images/Blocks/RedstoneLampOff.png"/>    <!-- 红石灯（灭） -->
+            <Image Height="30" Margin="5,5,0,0" Source="pack://application:,,,/images/Blocks/Egg.png"/>                <!-- 鸡蛋 -->
+            <Image Height="30" Margin="5,5,0,0" Source="pack://application:,,,/images/Blocks/Fabric.png"/>             <!-- 布料（Fabric 图标） -->
+</StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+  <local:MyCard Title="反馈选项" Margin="0,15,7.5,0" CanSwap="True" IsSwaped="True" Grid.Column="0" Grid.Row="4">    
+    <StackPanel Margin="25,40,23,15">
+            <local:MyButton Margin="0,5,10,0" Height="35" Padding="13,0,13,0"
+                   Text="反馈中心" EventType="打开网页" EventData="https://jinshuju.net/f/EYSm6p" ToolTip="点我打开反馈功能！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Padding="13,0,13,0"
+                   Text="复制反馈链接" EventType="复制文本" EventData="https://jinshuju.net/f/EYSm6p" ToolTip="点我复制反馈功能链接！"/>
+    </StackPanel>
+  </local:MyCard>
+
+  <local:MyCard Title="调试选项" Margin="7.5,15,0,0" CanSwap="True" IsSwaped="True" Grid.Column="1" Grid.Row="4">
+    <StackPanel Margin="18,40,16,15">
+            <local:MyButton Margin="0,5,10,0" Height="35" Padding="13,0,13,0"
+                   Text="PCL文件" EventType="打开文件" EventData="{path}/PCL" ToolTip="点我打开PCL文件！"/>
+            <local:MyButton Margin="0,5,10,0" Height="35" Padding="13,0,13,0"
+                   Text="配置文件" EventType="打开文件" EventData="Setup.ini" ToolTip="点我打开PCL2配置文件！"/>        
+    </StackPanel>
+  </local:MyCard>
+</Grid>
+
+<local:MyCard Title="详细信息" Margin="0,15,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,10,0" FontSize="10" HorizontalAlignment="Left" Foreground="#808080"
+        Text="关于"/>
+<Grid Margin="0,5,0,0">  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>
+		<ColumnDefinition Width="150"></ColumnDefinition>   
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>  
+<!--龙腾猫跃-->
+	     <Image Height="30" Width="30" Margin="0,3.8,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Source="https://pic1.afdiancdn.com/user/df2dfad2960911e89c5252540025c377/avatar/31c78ee63d5dce8ac4848c837fb04204_w160_h160_s35.jpg?imageView2/1/w/120/h/120" />
+         <TextBlock TextWrapping="Wrap" Margin="35,7,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Text="龙腾猫跃"/>
+         <TextBlock TextWrapping="Wrap" Margin="35,24,10,0" FontSize="11.5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Foreground="#808080" Text="制作 Plain Craft Launcher 2 启动器"/>
+         <local:MyButton Margin="0,5,0,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="0" Text="赞助作者" EventType="打开网页" EventData="https://afdian.net/p/8fe6fefefde811e9bda952540025c377" ToolTip="点我赞助作者！"/>
+<!--DragonSpiritan-->
+	     <Image Height="30" Width="30" Margin="0,3.8,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Source="https://pic1.afdiancdn.com/user/user_upload_osl/5106024ce0954d23dac89004576d65ae_w132_h132_s2.jpeg?imageView2/1/w/120/h/120" />
+         <TextBlock TextWrapping="Wrap" Margin="35,7,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Text="DragonSpiritan"/>
+         <TextBlock TextWrapping="Wrap" Margin="35,24,10,0" FontSize="11.5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Foreground="#808080" Text="制作此主页"/>
+         <local:MyButton Margin="0,5,0,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="1" Text="B站主页" EventType="打开网页" EventData="https://space.bilibili.com/256256648" ToolTip="点我打开B站主页！"/>
+<!--主页版本信息-->
+	     <Image Height="30" Width="30" Margin="0,3.8,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" Source="https://pic1.afdiancdn.com/user/df2dfad2960911e89c5252540025c377/common/1c489ab1560cb98b6ccb592367849aed_w240_h240_s40.jpg?imageView2/1/w/160/h/160" />
+         <TextBlock TextWrapping="Wrap" Margin="35,7,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" Text="自定义主页"/>
+         <TextBlock TextWrapping="Wrap" Margin="35,24,10,0" FontSize="11.5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" Foreground="#808080" Text="当前版本：Beta 4.1"/>
+         <local:MyButton Margin="0,5,0,0" Height="35" ColorType="Highlight" Grid.Column="1" Grid.Row="2" Text="复制下载链接" EventType="复制文本" EventData="http://49.232.199.166/[测试]pcl2自定义主题(ZJH制作)/Custom.xaml" ToolTip="点我复制链接！"/>
+</Grid>  
+<TextBlock TextWrapping="Wrap" Margin="0,20,10,0" FontSize="11.5" HorizontalAlignment="Left" Foreground="#808080"
+        Text="使用须知"/>
+<Grid Margin="0,5,0,0">  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition></ColumnDefinition>
+		<ColumnDefinition Width="110"></ColumnDefinition>
+    </Grid.ColumnDefinitions>  
+    <Grid.RowDefinitions>  
+        <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>  
+	     <Image Height="30" Width="30" Margin="0,3.8,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Source="https://pic1.afdiancdn.com/user/df2dfad2960911e89c5252540025c377/common/1c489ab1560cb98b6ccb592367849aed_w240_h240_s40.jpg?imageView2/1/w/160/h/160" />
+         <TextBlock TextWrapping="Wrap" Margin="35,7,0,0" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Text="Plain Craft Launcher 2"/>
+         <TextBlock TextWrapping="Wrap" Margin="35,24,10,0" FontSize="11.5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Foreground="#808080" Text="PCL2 需要 Alpha 1.4.9 或 Beta 1.4.14 及以上"/>
+         <local:MyButton Margin="0,0,0,0" Height="35" ColorType="Highlight" Text="下载 PCL2" Grid.Column="1" Grid.Row="0" EventType="打开网页" EventData="https://afdian.net/p/0164034c016c11ebafcb52540025c377" ToolTip="点我去下载！"/>
+</Grid>  
+
+<TextBlock TextWrapping="Wrap" Margin="0,20,10,0" FontSize="11.5" HorizontalAlignment="Left" Foreground="#808080"
+        Text="Beta 4.1 更新日志"/>
+<TextBlock TextWrapping="Wrap" Margin="0,5,0,0" HorizontalAlignment="Left"
+        Text="1.按钮会随窗口大小变换宽度
+&#xA;2.[代码]移除 Padding" ToolTip="Beta 4.1 更新日志"/>
+   </StackPanel>
+</local:MyCard>        
